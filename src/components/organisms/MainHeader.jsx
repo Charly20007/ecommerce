@@ -3,18 +3,11 @@ import MainMenu from "../molecules/header/MainMenu"
 
 const MainHeader = () => {
   return (
-    <div>
-        {/* <div>Logoo</div> atomizamos
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Ofertas</li>
-                <li>Contacto</li>
-            </ul>
-        </nav> */}
-        <Logo/>
-        <MainMenu/>
+    <div className="fixed bg-gradient w-full z-10">
+        <div className="w-full m-auto flex items-center lg:max-w-256">
+            <Logo/>
+            <MainMenu/>
+        </div>
     </div>
   )
 }
